@@ -51,9 +51,9 @@
                     <select class="form-control" id="filter">
                         <option value="0">Selecciona un filtro</option>
                         <option value="1">Threshold</option>
-                        <!--
                         <option value="2">Gaussian Blur</option>
                         <option value="3">Canny</option>
+                        <!--
                         <option value="4">Equalize Histogram</option>
                         -->
                     </select>
@@ -61,6 +61,20 @@
                     <div id="step3_1" class="step_blocks hide">
                         <span class="step">3</span> Threshold: <span id="value_sel">100</span>
                         <input type="range" class="custom-range" min="0" max="255" value="100" id="value">
+                    </div>
+
+                    <div id="step3_2" class="step_blocks hide">
+                        <span class="step">3</span> Kernel Filter Size: <span id="value_2_sel">3x3</span>
+                        <input type="range" class="custom-range" min="1" max="55" value="3" step="2" id="value_2">
+                    </div>
+
+                    <div id="step3_3" class="step_blocks hide">
+                        <span class="step">3</span> <br>
+                        <br> Threshol 1: <span id="value_3_1_sel">100</span>
+                        <input type="range" class="custom-range" min="0" max="255" value="100" id="value_3_1">
+                        <br> Threshol 2: <span id="value_3_2_sel">150</span>
+                        <input type="range" class="custom-range" min="0" max="255" value="100" id="value_3_2"> Aperture Size: <span id="value_3_sel">3</span>
+                        <input type="range" class="custom-range" min="3" max="7" value="3" step="2" id="value_3">
                     </div>
                     <a href="#" class="btn btn-primary" style="display: none;" id="cv_start">Procesar Imagen</a>
                 </div>
