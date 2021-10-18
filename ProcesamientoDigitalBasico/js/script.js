@@ -32,6 +32,12 @@ const process = () => {
                 cv.Canny(mat, mat_result, value1, value2, value_Aperture);
                 break;
             }
+        case 4:
+            {
+                cv.cvtColor(mat, mat, cv.COLOR_BGR2GRAY);
+                cv.equalizeHist(mat, mat_result);
+                break;
+            }
     }
     cv.imshow('canvasOutput', mat_result);
     mat.delete();
